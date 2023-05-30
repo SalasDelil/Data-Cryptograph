@@ -10,7 +10,7 @@ import {
 
 export default function Index() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const { data: status } = useSession({ required: true });
+  const { data: session, status } = useSession({ required: true });
 
   if (status === "authenticated") {
     return <Crypto />;
