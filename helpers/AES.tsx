@@ -11,3 +11,4 @@ export const encryptAES = (str: string | CryptoJS.lib.WordArray,
     // const decodedStr = decodeURIComponent(str);
     return AES.decrypt(str, key).toString(enc.Utf8);
   };
+  
